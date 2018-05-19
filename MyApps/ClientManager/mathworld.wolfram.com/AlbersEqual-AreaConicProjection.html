@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+<!-- Original URL: http://mathworld.wolfram.com/AlbersEqual-AreaConicProjection.html
+Date Downloaded: 13/11/2016 9:45:16 AM !-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>Albers Equal-Area Conic Projection -- from Wolfram MathWorld </title>
+ 
+ <meta name="DC.Title" content="Albers Equal-Area Conic Projection" />
+ <meta name="DC.Creator" content="Weisstein, Eric W." />
+ <meta name="DC.Description" content="Let phi_0 be the latitude for the origin of the Cartesian coordinates and lambda_0 its longitude, and let phi_1 and phi_2 be the standard parallels. Then for a unit sphere, the Albers equal-area conic projection maps latitude and longitude (phi,lambda) to Cartesian (x,y) coordinates x = rhosintheta (1)  y = rho_0-rhocostheta, (2)  where n = 1/2(sinphi_1+sinphi_2) (3)  theta = n(lambda-lambda_0) (4)  C = cos^2phi_1+2nsinphi_1 (5)  rho = (sqrt(C-2nsinphi))/n (6)  rho_0 =..." />
+ <meta name="DC.Date.Modified" scheme="W3CDTF" content="2004-02-15" />
+ <meta name="DC.Subject" scheme="MathWorld" content="Mathematics:Geometry:Projective Geometry:Map Projections" />
+ <meta name="DC.Rights" content="Copyright 1999-2016 Wolfram Research, Inc.  See http://mathworld.wolfram.com/about/terms.html for a full terms of use statement." />
+ <meta name="DC.Format" scheme="IMT" content="text/html" />
+ <meta name="DC.Identifier" scheme="URI" content="http://mathworld.wolfram.com/AlbersEqual-AreaConicProjection.html" />
+ <meta name="DC.Language" scheme="RFC3066" content="en" />
+ <meta name="DC.Publisher" content="Wolfram Research, Inc." />
+ <meta name="DC.Relation.IsPartOf" scheme="URI" content="http://mathworld.wolfram.com/" />
+ <meta name="DC.Type" scheme="DCMIType" content="Text" />
+ <meta name="Last-Modified" content="2004-02-15" />
+ <link rel="alternate" type="application/rss+xml" title="MathWorld Headline News" href="/news/rss.xml" />
+ <link rel="stylesheet" type="text/css" href="/css/mathworldv2.css" />
+ <link rel="shortcut icon" href="/favicon_mathworld.png" type="image/png" />
+ <script language="JavaScript" type="text/javascript" src="/common/javascript/menu.js"></script>
+ <script language="JavaScript" type="text/javascript" src="/scripts/mathworld.js"></script>
+ <script language="JavaScript" type="text/javascript" src="/scripts/downloadNotebook.js"></script>
+ <script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-216407-21', 'mathworld.wolfram.com');
+  ga('send', 'pageview');
+</script>
+ </head>
+ <body><div style="z-index: 9999; position: fixed; width: 100%; border: 0px; padding: 5px; margin: 0px; background-color: transparent;  font-size: 12pt; font-family: sans-serif;" id="web2disk_nag" onclick="javascript: document.getElementById('web2disk_nag').style.display = 'none';">
+		<div style="color: #000000; background-color:#F1F1F1; margin-left: auto; margin-right: auto; border-width: 2px; border-style: solid; width: 550px; ">
+			<div style="width: 100%; text-align: center; font-weight: bold; border: 0px; margin: 0px; padding: 0px">Hey, where did my words go? (Click to hide)</div>
+			<p>In the trial version of Web2Disk every fifth word is blanked out. 
+			To copy this site with all the words, please upgrade to the full version and copy this website again.</p>
+			<div style="width: 100%; text-align: center; font-weight: bold; border: 0px; margin: 0px; padding: 0px">
+				<a href="http://www.inspyder.com/products/Web2Disk/">Inspyder Web2Disk: The Website Downloader</a>
+			</div>
+		</div>
+	</div>
+ <script type="text/javascript" src="/common/javascript/eu-cookie.js"></script>
+ <table summary="" id="headerTable" width="100%" cellpadding="0" cellspacing="0" border="0">
+		 <tr>
+			 <td>
+				 <div id="logo">
+ <img src="/images/topbar/logo.png" alt="" usemap="#mwlogomap" />
+
+ <map name="mwlogomap" id="mwlogomap">
+   <area shape="rect" coords="0,30,200,47" href="http://www.wolfram.com/mathematica/" alt="Built with Mathematica Technology" title="Built with Mathematica Technology" />
+   <area shape="rect" coords="0,0,617,30" href="/" alt="Wolfram MathWorld" title="Wolfram MathWorld" />
+ </map>
+ </div>
+			 </td>
+			 <td>
+				 <div id="searchWrapper">
+					 <form name="NavBarSearch" action="/search/" method="get" accept-charset="UTF-8" onsubmit=" if (checkForDefaultInput('query_1', 'Search MathWorld')) { return false; }">
+						 <input id="search" class="searchboxsub" name="query" type="text" value="Search MathWorld" onfocus="initTextInput(this,'clear','Search MathWorld')" onblur="initTextInput(this,'setDefault','Search MathWorld')" />
+						 <input type="image" src="/images/topbar/search-icon.png" id="search-icon" alt="Search" onclick="if (checkForDefaultInput('query_1', 'Search MathWorld')) { return false;} else {document.NavBarSearch.submit(); }" />
+					 </form>
+				 </div>
+			 </td>
+		 </tr>
+	 </table>
+	
+ <table summary="" id="pageTable" width="100%" cellpadding="0" cellspacing="0" border="0">
+		 <tr>
+			 <td class="leftcolumn">
+			 <!--Start nav content -->
+ <!-- Sidebar -->
+
+				 <div id="navigation">
+					 <div><a href="/topics/Algebra.html">Algebra </a></div>
+					 <div><a href="/topics/AppliedMathematics.html">Applied Mathematics </a></div>
+					 <div><a href="/topics/CalculusandAnalysis.html">Calculus and Analysis </a></div>
+					 <div><a href="/topics/DiscreteMathematics.html">Discrete Mathematics </a></div>
+					 <div><a href="/topics/FoundationsofMathematics.html">Foundations of Mathematics </a></div>
+					 <div><a href="/topics/Geometry.html">Geometry </a></div>
+					 <div><a href="/topics/HistoryandTerminology.html">History and Terminology </a></div>
+					 <div><a href="/topics/NumberTheory.html">Number Theory </a></div>
+					 <div><a href="/topics/ProbabilityandStatistics.html">Probability and Statistics </a></div>
+					 <div><a href="/topics/RecreationalMathematics.html">Recreational Mathematics </a></div>
+					 <div><a href="/topics/Topology.html">Topology </a></div>
+					 <div class="subnav">
+						 <div class="subnav-item">
+							 <a href="/letters/">Alphabetical Index </a><br />
+							 <a href="/topics/InteractiveEntries.html">Interactive Entries </a><br />
+							 <a href="/cgi-bin/random.cgi">Random Entry </a><br />
+							 <a href="/whatsnew/">New in  <em>MathWorld </em></a>
+						 </div>
+						 <div class="subnav-item">
+							 <a href="/classroom/"><em>MathWorld </em> Classroom </a>
+						 </div>			
+						 <div class="subnav-item">
+							 <a href="/about/">About  <em>MathWorld </em></a><br />
+							 <a href="/contact/contribute.html">Contribute to  <em>MathWorld </em></a><br />
+							 <a href="/contact/">Send a Message to ___ Team </a>
+						 </div>
+						 <div class="subnav-item last">
+							 <a href="http://www.amazon.com/exec/obidos/ASIN/1420072218/ref=nosim/weisstein-20" target="_blank"><em>MathWorld </em> Book </a>
+						 </div>
+					 </div>
+				 </div>
+				 <div id="credits">
+					 <div class="links"><a href="http://www.wolfram.com/resources/" target="_blank" title="Wolfram Web Resources">Wolfram Web Resources&nbsp;&raquo; </a></div>
+					 <div class="lastupdated">
+						 <a href="/whatsnew/">13,594 entries </a><br />
+						 <a href="/whatsnew/">Last updated: Tue Nov  8 2016 </a>
+					 </div>
+					 <div class="author">Created, developed, and nurtured&nbsp;by&nbsp; <a href="http://mathworld.wolfram.com/about/author.html" class="authorlink" title="Created, developed, and nurtured by Eric Weisstein">Eric&nbsp;Weisstein </a> at  <a href="http://www.wolfram.com/" target="_blank" class="companylink" title="Wolfram Research">Wolfram&nbsp;Research </a></div>
+				 </div>
+
+ <!-- End Sidebar -->
+
+				 <!--End nav content -->
+			 </td>
+			 <td class="mainCell">
+				
+ <div id="mainContent">
+ <!-- Begin Body -->
+ <!-- Begin Subject -->
+ <div class="linktrail">
+ <a href="/topics/Geometry.html">Geometry </a>&nbsp;&gt;&nbsp; <a href="/topics/ProjectiveGeometry.html">Projective
+Geometry </a>&nbsp;&gt;&nbsp; <a href="/topics/MapProjections.html">Map Projections </a>&nbsp;&gt; <br />
+ </div>
+ <!-- End Subject -->
+ <br />
+ <!-- Begin Title -->
+ <h1>Albers Equal-Area Conic Projection </h1>
+ <!-- End Title -->
+ <!-- Begin Total Content -->
+ <a href="http://mathworld.wolfram.com/notebooks/MapProjections/AlbersEqual-AreaConicProjection.nb" onclick="downloadNotebook('http://mathworld.wolfram.com/notebooks/MapProjections/AlbersEqual-AreaConicProjection.nb');return false;"><img src="/images/entries/dnld-nb.png" width="119" height="26" border="0" alt="DOWNLOAD Mathematica Notebook" /></a>
+ <!-- Begin Content -->
+ <img width="514" height="248" src="images/eps-gif/AlbersEqualAreaConicProjection_900.gif" class="center-image" alt="AlbersEqualAreaConicProjection" />
+ <p>
+Let  <img src="/images/equations/AlbersEqual-AreaConicProjection/Inline1.gif" class="inlineformula" width="14" height="14" border="0" alt="phi_0" /> be the  <a href="/Latitude.html">latitude </a>
+ for the origin __ the  <a href="/CartesianCoordinates.html">Cartesian coordinates </a>
+ and  <img src="/images/equations/AlbersEqual-AreaConicProjection/Inline2.gif" class="inlineformula" width="13" height="14" border="0" alt="lambda_0" /> its  <a href="/Longitude.html">longitude </a>,
+ and let  <img src="/images/equations/AlbersEqual-AreaConicProjection/Inline3.gif" class="inlineformula" width="14" height="14" border="0" alt="phi_1" /> and  <img src="/images/equations/AlbersEqual-AreaConicProjection/Inline4.gif" class="inlineformula" width="14" height="14" border="0" alt="phi_2" /> be the standard
+ _________. Then for a  <a href="/UnitSphere.html">unit sphere </a>, the Albers equal-area
+ _____ projection maps latitude and _________  <img src="/images/equations/AlbersEqual-AreaConicProjection/Inline5.gif" class="inlineformula" width="31" height="14" border="0" alt="(phi,lambda)" /> to
+ Cartesian  <img src="/images/equations/AlbersEqual-AreaConicProjection/Inline6.gif" class="inlineformula" width="30" height="14" border="0" alt="(x,y)" /> coordinates
+ </p>
+ <table summary="" align="center" width="100%" cellpadding="0" cellspacing="0" style="padding-left: 50px" border="0">
+ <tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline7.gif" class="displayformula" width="7" height="14" border="0" alt="x" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline8.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline9.gif" class="displayformula" width="36" height="14" border="0" alt="rhosintheta" /></td><td align="right" width="10">
+ <div id="eqn1" class="eqnum">
+(1)
+ </div>
+ </td></tr><tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline10.gif" class="displayformula" width="7" height="14" border="0" alt="y" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline11.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline12.gif" class="displayformula" width="72" height="14" border="0" alt="rho_0-rhocostheta," /></td><td align="right" width="10">
+ <div id="eqn2" class="eqnum">
+(2)
+ </div>
+ </td></tr>
+ </table>
+ <p>
+where
+ </p>
+ <table summary="" align="center" width="100%" cellpadding="0" cellspacing="0" style="padding-left: 50px" border="0">
+ <tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline13.gif" class="displayformula" width="7" height="14" border="0" alt="n" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline14.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline15.gif" class="displayformula" width="102" height="23" border="0" alt="1/2(sinphi_1+sinphi_2)" /></td><td align="right" width="10">
+ <div id="eqn3" class="eqnum">
+(3)
+ </div>
+ </td></tr><tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline16.gif" class="displayformula" width="6" height="14" border="0" alt="theta" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline17.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline18.gif" class="displayformula" width="53" height="14" border="0" alt="n(lambda-lambda_0)" /></td><td align="right" width="10">
+ <div id="eqn4" class="eqnum">
+(4)
+ </div>
+ </td></tr><tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline19.gif" class="displayformula" width="9" height="14" border="0" alt="C" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline20.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline21.gif" class="displayformula" width="110" height="17" border="0" alt="cos^2phi_1+2nsinphi_1" /></td><td align="right" width="10">
+ <div id="eqn5" class="eqnum">
+(5)
+ </div>
+ </td></tr><tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline22.gif" class="displayformula" width="8" height="14" border="0" alt="rho" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline23.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline24.gif" class="displayformula" width="94" height="44" border="0" alt="(sqrt(C-2nsinphi))/n" /></td><td align="right" width="10">
+ <div id="eqn6" class="eqnum">
+(6)
+ </div>
+ </td></tr><tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline25.gif" class="displayformula" width="14" height="14" border="0" alt="rho_0" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline26.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline27.gif" class="displayformula" width="104" height="44" border="0" alt="(sqrt(C-2nsinphi_0))/n." /></td><td align="right" width="10">
+ <div id="eqn7" class="eqnum">
+(7)
+ </div>
+ </td></tr>
+ </table>
+ <p>
+The projection illustrated above _____  <img src="/images/equations/AlbersEqual-AreaConicProjection/Inline28.gif" class="inlineformula" width="108" height="14" border="0" alt="(phi_0,lambda_0)=(0 degrees,0 degrees)" />
+ and standard parallels __  <img src="/images/equations/AlbersEqual-AreaConicProjection/Inline29.gif" class="inlineformula" width="47" height="14" border="0" alt="phi_1=0 degrees" />
+ and  <img src="/images/equations/AlbersEqual-AreaConicProjection/Inline30.gif" class="inlineformula" width="54" height="14" border="0" alt="phi_2=60 degrees" />.
+ </p>
+ <p>
+The inverse  <a href="/Formula.html">formulas </a> are
+ </p>
+ <table summary="" align="center" width="100%" cellpadding="0" cellspacing="0" style="padding-left: 50px" border="0">
+ <tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline31.gif" class="displayformula" width="8" height="14" border="0" alt="phi" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline32.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline33.gif" class="displayformula" width="102" height="42" border="0" alt="sin^(-1)((C-rho^2n^2)/(2n))" /></td><td align="right" width="10">
+ <div id="eqn8" class="eqnum">
+(8)
+ </div>
+ </td></tr><tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline34.gif" class="displayformula" width="7" height="14" border="0" alt="lambda" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline35.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline36.gif" class="displayformula" width="44" height="35" border="0" alt="lambda_0+theta/n," /></td><td align="right" width="10">
+ <div id="eqn9" class="eqnum">
+(9)
+ </div>
+ </td></tr>
+ </table>
+ <p>
+where
+ </p>
+ <table summary="" align="center" width="100%" cellpadding="0" cellspacing="0" style="padding-left: 50px" border="0">
+ <tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline37.gif" class="displayformula" width="8" height="14" border="0" alt="rho" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline38.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline39.gif" class="displayformula" width="96" height="27" border="0" alt="sqrt(x^2+(rho_0-y)^2)" /></td><td align="right" width="10">
+ <div id="eqn10" class="eqnum">
+(10)
+ </div>
+ </td></tr><tr style="Text"><td align="right" width="1"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline40.gif" class="displayformula" width="6" height="14" border="0" alt="theta" /></td><td align="center" width="14"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline41.gif" class="displayformula" width="9" height="14" border="0" alt="=" /></td><td align="left"><img src="/images/equations/AlbersEqual-AreaConicProjection/Inline42.gif" class="displayformula" width="89" height="37" border="0" alt="tan^(-1)(x/(rho_0-y))." /></td><td align="right" width="10">
+ <div id="eqn11" class="eqnum">
+(11)
+ </div>
+ </td></tr>
+ </table>
+ <!-- End Content -->
+ <div id="related">
+ <!-- Begin See Also -->
+ <span>SEE ALSO: </span>  <a href="/ConicProjection.html">Conic Projection </a>,  <a href="/Equal-AreaProjection.html">Equal-Area
+Projection </a>,  <a href="/MapProjection.html">Map Projection </a>
+ <!-- End See Also -->
+ <!-- Begin CrossURL -->
+ <!-- End CrossURL -->
+ <!-- Begin Contributor -->
+ <!-- End Contributor -->
+ <!-- Begin References -->
+ <div class="line">
+ <!-- -->
+ </div>
+ <span>REFERENCES: </span>
+ <p class="small">
+Snyder, J.&nbsp;P.  <i><a href="http://www.amazon.com/exec/obidos/ASIN/9998605067/ref=nosim/ericstreasuretro">Map Projections--A Working Manual. </a></i> U.&nbsp;S. Geological Survey ____________
+ Paper 1395. Washington, DC: _.&____;_. Government Printing Office, pp.&nbsp;98-103,
+ 1987.
+ </p>
+ <div class="line">
+ <!-- -->
+ </div>
+Referenced on Wolfram|Alpha:  <a href="http://www.wolframalpha.com/entities/mathworld/albers_equal-area_conic_projection/qd/cw/yd/" title="Albers Equal-Area Conic Projection" target="_blank">Albers Equal-Area Conic
+ Projection </a>
+ <!-- End References -->
+ <!-- Begin CiteAs -->
+ <div class="line">
+ <!-- -->
+ </div>
+ <span>CITE THIS AS: </span>
+ <p class="small">
+ <a href="/about/author.html">Weisstein, Eric W. </a> &quot;Albers Equal-Area Conic __________.&____; From  <a href="/"><i>MathWorld </i></a>--A Wolfram Web Resource.
+  <a href="http://mathworld.wolfram.com/AlbersEqual-AreaConicProjection.html">http://mathworld.wolfram.com/AlbersEqual-AreaConicProjection.html </a>
+ </p>
+ <!-- End CiteAs -->
+ </div>
+ <!-- End Total Content -->
+ <!-- End Body -->
+ </div>
+ <!--End main content -->
+				
+ <!--Start resources content -->
+
+				 <div id="resourcesContent">
+					 <h1>Wolfram Web Resources </h1>
+					 <table summary="" width="100%" cellpadding="0" cellspacing="0" border="0">
+						 <tr>
+							 <td>
+								 <span class="title"><a href="http://www.wolfram.com/mathematica/" target="_blank">Mathematica&nbsp;&raquo; </a></span>
+								 <p>The #1 tool for ________ Demonstrations and anything technical. </p>
+							 </td>
+							 <td>
+								 <span class="title"><a href="http://www.wolframalpha.com/" target="_blank">Wolfram|Alpha&nbsp;&raquo; </a></span>
+								 <p>Explore anything with the _____ computational knowledge engine. </p>
+							 </td>
+							 <td class="last">
+								 <span class="title"><a href="http://demonstrations.wolfram.com/" target="_blank">Wolfram Demonstrations Project&nbsp;&raquo; </a></span>
+								 <p>Explore thousands of free ____________ across science, mathematics, engineering, __________, business, art, finance, social ________, and more. </p>
+							 </td>
+						 </tr>
+						 <tr>
+							 <td class="last">
+								 <span class="title"><a href="http://www.computerbasedmath.org/" target="_blank">Computerbasedmath.org&nbsp;&raquo; </a></span>
+								 <p>Join the initiative for ___________ math education. </p>
+							 </td>
+							 <td>
+								 <span class="title"><a href="http://www.wolframalpha.com/calculators/integral-calculator/" target="_blank">Online Integral Calculator&nbsp;&raquo; </a></span>
+								 <p>Solve integrals with Wolfram|Alpha. </p>
+							 </td>
+							 <td class="last">
+								 <span class="title"><a href="https://www.wolframalpha.com/pro/step-by-step-math-solver.html" target="_blank">Step-by-step Solutions&nbsp;&raquo; </a></span>
+								 <p>Walk through homework problems ____-__-____ from beginning to end. _____ help you try the ____ step on your own. </p>
+							 </td>
+						 </tr>
+						 <tr>
+							 <td>
+								 <span class="title"><a href="http://www.wolframalpha.com/pro/problem-generator/" target="_blank">Wolfram Problem Generator&nbsp;&raquo; </a></span>
+								 <p>Unlimited random practice problems ___ answers with built-in Step-by-step _________. Practice online or make _ printable study sheet. </p>
+							 </td>
+							 <td>
+								 <span class="title"><a href="http://education.wolfram.com/index.html" target="_blank">Wolfram Education Portal&nbsp;&raquo; </a></span>
+								 <p>Collection of teaching and ________ tools built by Wolfram _________ experts: dynamic textbook, lesson _____, widgets, interactive Demonstrations, and ____. </p>
+							 </td>
+							 <td class="last">
+								 <span class="title"><a href="http://www.wolfram.com/language/" target="_blank">Wolfram Language&nbsp;&raquo; </a></span>
+								 <p>Knowledge-based programming for everyone. </p>
+							 </td>
+						 </tr>
+					 </table>
+				 </div>	
+ <!--End resources content -->
+				
+ <!--Start footer content -->
+				 <div id="footer">
+					 <table summary="" width="100%" cellpadding="0" cellspacing="0" border="0">
+						 <tr>	
+							 <td><a href="/contact/"><img src="/images/footer/contact-icon.gif" alt="" title="" border="0" /> Contact the  <em>MathWorld </em> Team </a></td>
+							 <td class="copyright">&copy; 1999-2016  <a href="http://www.wolfram.com/" target="_blank">Wolfram Research, Inc. </a> |  <a href="/about/terms.html">Terms of Use </a></td>
+						 </tr>
+					 </table>
+				 </div>
+
+ <!--End footer content -->
+ </td>
+ <td>
+ <div id="sidebar">
+						
+ <div class="wawidgetWrapper">
+       
+ <div class="wawidget">
+        <a href="http://www.wolframalpha.com" class="walogolink" target="_blank" title="Wolfram|Alpha"></a>
+        <form target="_blank" action="http://www.wolframalpha.com/input/" name="wolframalpha">
+        <input type="text" value="" name="i" id="i" />
+        <input type="image" src="/images/wolframalpha/WA-equals.gif" id="calculate" />
+        </form>
+       
+ <div class="clear">
+ </div>
+       
+ <div id="try">
+        <span>THINGS TO TRY: </span>
+       
+ <div>
+ <a target="_blank" href="http://www.wolframalpha.com/input/?i=map+projections"><img src="/images/wolframalpha/WA-try-equals.gif" alt="" title="" />map projections </a>
+ </div>
+       
+ <div><a target="_blank" href="http://www.wolframalpha.com/input/?i=8_1+knot"><img src="/images/wolframalpha/WA-try-equals.gif" alt="" title="" />8_1 knot </a></div>
+
+ <div><a target="_blank" href="http://www.wolframalpha.com/input/?i=factor+70560"><img src="/images/wolframalpha/WA-try-equals.gif" alt="" title="" />factor 70560 </a></div>
+
+       
+ </div>
+       
+ </div>
+       
+ </div>
+ <div class="alphaWrapper">
+ <a href="http://www.wolfram.com/solutions/education/students/?source=mw-sidebar" target="_blank"><img src="http://www.wolframcdn.com/side-images/student-greater-than-3.png" alt="Mathematica Student Edition" title="Mathematica Student Edition" /></a>
+ </div>
+
+ </div>
+ </td>
+ </tr>
+ </table>
+ </body>
+ </html>
+ 
