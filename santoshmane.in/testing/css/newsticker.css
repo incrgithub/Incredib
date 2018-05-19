@@ -1,0 +1,32 @@
+* { margin:0; padding:0; }
+
+#newsticker-demo { 
+width:500px; 
+padding:5px 5px 0; 
+font-family:Verdana,Arial,Sans-Serif;
+font-size:12px;
+margin:20px auto;
+height : 150px;
+}
+
+#newsticker-demo a { text-decoration:none; }
+#newsticker-demo img { border: 2px solid #FFFFFF; }
+
+#newsticker-demo .title {
+text-align:center;
+font-size:14px;
+font-weight:bold;
+padding:5px;
+}
+
+.newsticker-jcarousellite { width:500px; }
+.newsticker-jcarousellite ul li{ list-style:none; display:block; padding-bottom:1px; margin-bottom:5px; }
+.newsticker-jcarousellite .thumbnail { float:left; width:110px; }
+.newsticker-jcarousellite .info { float:left; width:450px; }
+.newsticker-jcarousellite .info span.cat { display: block; font-size:10px; color:#808080; }
+
+.clear { clear: both; }
+.myclass  {
+width  : 16px;
+height : 16px;
+}

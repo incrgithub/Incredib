@@ -1,0 +1,16 @@
+"2018-04-08 08:34:23",INFO,--,"Inserting new Faculty Data :::INSERT INTO tbl_faculty(type,name,deptname,designation,qualification,experience,photo) values('Teaching','fffsfss','Chemistry','sad','MSC','1','fffsfss.jpg')",92,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/facultyactions.php
+"2018-04-08 08:34:23",INFO,--,"Faculty Data inserted",96,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/facultyactions.php
+"2018-04-08 08:36:29",INFO,--,"Updating Faculty Data :::UPDATE tbl_faculty SET type='Teaching',name='Kajal Agarwal',deptname='Chemistry',designation='Professor',qualification='MSC',experience='19',photo='Kajal Agarwal.jpg' where id='10'",341,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/facultyactions.php
+"2018-04-08 08:36:46",INFO,--,"Updating Faculty Data :::UPDATE tbl_faculty SET type='Non-Teaching',name='Kajal Agarwal',deptname='Chemistry',designation='Professor',qualification='MSC',experience='19' where id='10'",300,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/facultyactions.php
+"2018-04-08 08:37:21",INFO,--,"Deleting Faculty Data :::delete from tbl_faculty where id='10'",199,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/facultyactions.php
+"2018-04-08 08:37:58",INFO,--,"Deleting Faculty Data :::delete from tbl_faculty where id='10'",199,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/facultyactions.php
+"2018-04-08 08:37:58",INFO,--,"Faculty Data Deleted",201,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/facultyactions.php
+"2018-04-08 08:40:14",INFO,--,"Inserting new Gallery Data :::INSERT INTO tbl_gallery(name,title) values('anasuya-rangasthalam-thanks-meet3.jpg','Test')",74,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/galleryactions.php
+"2018-04-08 08:40:38",INFO,--,"Inserting new Gallery Data :::INSERT INTO tbl_gallery(name,title) values('anasuya-rangasthalam-thanks-meet3.jpg','Test')",74,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/galleryactions.php
+"2018-04-08 08:40:38",INFO,--,"Gallery Data inserted",78,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/galleryactions.php
+"2018-04-08 08:42:25",INFO,--,"Deleting Gallery Data :::delete from tbl_gallery where photoid='55'",174,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/galleryactions.php
+"2018-04-08 08:42:25",INFO,--,"Gallery Data Deleted",176,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/galleryactions.php
+"2018-04-08 08:44:44",INFO,--,"Inserting News Data :::INSERT INTO tbl_news(newsdate,subject,description,attachment,image) values('2018-04-08','I Love You Kasturi','ssssa','ashwini-black-frock-hd6.jpg','')",96,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/newsactions.php
+"2018-04-08 08:44:44",INFO,--,"News Data inserted",100,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/newsactions.php
+"2018-04-08 08:45:02",INFO,--,"Deleting News Data :::delete from tbl_news where id='13'",196,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/newsactions.php
+"2018-04-08 08:45:02",INFO,--,"News Data Deleted",198,/home/dkkkpmba/public_html/dkkkpjrclscikalamb.com/ControlPanel/newsactions.php
